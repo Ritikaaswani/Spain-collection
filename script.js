@@ -38,7 +38,7 @@ var t1 = gsap.timeline({
     end:"top -230%",
     pin:true,
     scrub:2,
-    markers:true
+    // markers:true
 
   }
 })
@@ -74,5 +74,31 @@ t1.from("#page1 i",{
   delay:0.25
   
 },"anim")
+ 
+gsap.to("#main",{
+  backgroundColor:"#fff",
+  scrollTrigger:{
+    trigger:"#page3",
+    scroller:"#main",
+    start:"top 10%",
+    end:"top 0%",
+    scrub:2,
+    // markers:true
 
+  }
+},"a")
+
+gsap.to("#page3-container h2,#page3-container h3",{
+ color: "#000",
+ scrollTrigger:{
+  trigger:"#page3",
+  scroller:"#main",
+  start:"top 10%",
+  end:"top 0%",
+  scrub:2,
+  // markers:true
+
+}
+ 
+})
 
