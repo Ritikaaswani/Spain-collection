@@ -1,0 +1,314 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html,body{
+    height: 100%;
+    width: 100%;
+}
+#main{
+    position: relative;
+    overflow: hidden;
+}
+#page1{
+    min-height: 100vh;
+    width: 100%;
+    /* background-color: blue; */
+    
+}
+#nav{
+    height: 32vh;
+    width: 100%;
+    /* background-color: blue; */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16vw;
+}
+#nav-part1{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+    
+}
+#nav-part1 h4{
+    font-family: Inter;
+    font-weight: 100;
+    font-size: 18px;
+    color: #5a5c5a;
+    letter-spacing: 0.4px;
+    border-bottom: 2px solid transparent;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+#nav-part1 h4:hover{
+    border-bottom: 2px solid #D66A73 ;
+    color: #D66A73;
+}
+#nav-part3 h4:hover{
+    border-bottom: 2px solid #D66A73 ;
+    color: #D66A73;
+}
+#nav-part1 h4:nth-child(1){
+    color: #D66A73;
+    border-bottom: 2px solid #D66A73 ;
+}
+#nav-part2{
+    height: 18vh;
+    width: 10vw;
+    /* background-color: blue; */
+    background-image: url(https://spaincollection.com/wp-content/themes/spaincollection/img/logo.svg);
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-top: 65px;
+}
+#nav-part3 h4{
+    font-family: Inter;
+    font-weight: 100;
+    font-size: 18px;
+    color: #5a5c5a;
+    letter-spacing: 0.4px;
+    border-bottom: 2px solid transparent;
+    transition: all ease 0.5s;
+    cursor: pointer;
+}
+#nav-part3{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+}
+#page1 h2{
+    text-align: center;
+    font-family: Saol Display;
+    font-weight: 300;
+    font-size: 41.9px;
+    line-height: 47px;
+    margin-top: 35px;
+    letter-spacing: 0.4px;
+}
+#page2{
+    min-height: 140vh;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+#center{
+    height: 100vh;
+    width: 100%;
+    /* background-color: red; */
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    position: relative;
+    /* margin-top: 30px; */
+    
+}
+#part1{
+    height: 80vh;
+    width: 32%;
+    /* background-color: rgb(198, 244, 229); */
+    position: relative;
+}
+#part1 video:nth-child(1){
+    height: 70%;
+    width: 45%;
+    position: absolute;
+    top: 11%;
+    left: -15%;
+    /* background-color: rgb(54, 2, 2); */
+    object-fit: cover;
+}
+#part1 video:nth-child(2){
+    height: 55%;
+    width: 63%;
+    position: absolute;
+    top: 0%;
+    left: 37%;
+    /* background-color: rgb(206, 29, 29); */
+    object-fit: cover;
+}
+#part2{
+    position: relative;
+   
+}
+#part2 video{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+#part1 video:nth-child(3){
+    height: 33%;
+    width: 63%;
+    position: absolute;
+    bottom: 5%;
+    left: 37%;
+    /* background-color: rgb(63, 20, 20); */
+    object-fit: cover;
+}
+#part3 video:nth-child(1){
+    height: 70%;
+    width: 45%;
+    position: absolute;
+    top: 11%;
+    right: -15%;
+    /* background-color: rgb(54, 2, 2); */
+    object-fit: cover;
+}
+#part3 video:nth-child(2){
+    height: 55%;
+    width: 63%;
+    position: absolute;
+    top: 0%;
+    right: 37%;
+    /* background-color: rgb(206, 29, 29); */
+    object-fit: cover;
+}
+#part3 video:nth-child(3){
+    height: 33%;
+    width: 63%;
+    position: absolute;
+    bottom: 5%;
+    right: 37%;
+    /* background-color: rgb(63, 20, 20); */
+    object-fit: cover;
+}
+#part2{
+    height: 100vh;
+    width: 32%;
+    /* background-color: rgb(198, 244, 229); */
+}
+#part3{
+    height: 80vh;
+    width: 32%;
+    /* background-color: rgb(198, 244, 229); */
+    position: relative;
+}
+#page1 h1{
+    font-family: Saol Display;
+    text-align: center;
+    text-transform: uppercase;
+    position: absolute;
+    left: 49%;
+    transform: translate(-50%,0);
+    font-size: 108px;
+    z-index: 9;
+    width: 30%;
+    font-weight: 300;
+    font-style: italic;
+    line-height: 95px;
+    margin-top: 60px;
+}
+#page1 h3{
+    font-family: Saol Display;
+    text-align: center;
+   text-transform: uppercase;
+   position: absolute;
+   bottom: 12%;
+   left: 50%;
+   transform: translate(-50%,0);
+   z-index: 9;
+   font-size: 108px;
+   line-height: 97.5px;
+   font-weight: 300;
+   color: #fff;
+   letter-spacing: 0.4px;
+}
+#page1 h3 span{
+    color: #BF1826;
+    font-style: italic;
+}
+#page1 i{
+    font-size: 20px;
+    text-align: center;
+   text-transform: uppercase;
+   position: absolute;
+   bottom: 4%;
+   left: 50%;
+   transform: translate(-50%,0);
+   z-index: 9;
+   color: #fff;
+   letter-spacing: 0.4px;
+   border: 1px solid #fff;
+   border-radius: 50%;
+   padding: 20px ;
+}
+#videocontainer{
+    height: 80vh;
+    width: 50vw;
+    /* background-color: #BF1826; */
+    position: relative;
+    margin-top: 20vh;
+}
+#videocontainer video{
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+}
+#videocontainer img{
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+#videocontainer #overlay{
+    height: 85%;
+    width: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    background-color: rgba(0, 0, 0, 0.593);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#videocontainer h2{
+    color: #fff;
+    font-family: Inter;
+    text-align: center;
+    font-size: 22px;
+    font-weight: 500;
+    padding-top: 25px;
+    letter-spacing: 0.3px;
+}
+#videocontainer h3{
+    color: #fff;
+    font-family: Inter;
+    text-align: center;
+    font-size: 14px;
+    font-weight: 300;
+    padding-top: 4px;
+    letter-spacing: 0.3px;
+}
+#page2 h4{
+    text-transform: uppercase;
+    color: #BF1826;
+    font-family: Inter;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 100;
+    position: absolute;
+    left: 50%;
+    top: 20%;
+    transform: translate(-50%,0);
+}
+#overlay i{
+    font-size: 20px;
+    text-align: center;
+   text-transform: uppercase;
+   z-index: 9;
+   color: #fff;
+   letter-spacing: 0.4px;
+   border: 1px solid #fff;
+   border-radius: 50%;
+   padding: 20px ;
+
+}
