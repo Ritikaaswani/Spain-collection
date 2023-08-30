@@ -145,6 +145,76 @@ t1.to("#black>h1",{
 var cursor = document.querySelector("#customcursor")
 var main = document.querySelector("#main")
 main.addEventListener("mousemove",function(dets){
-  cursor.style.left = `${dets.x + 30}px`
+  cursor.style.left = `${dets.x + 10}px`
   cursor.style.top = `${dets.y}px`
+})
+var play = document.querySelector("#page1>h5")
+var t = document.querySelector("#customcursor h4")
+play.addEventListener("mouseenter",function(){
+  cursor.style.height = '80px';
+  cursor.style.width = '80px';
+  t.innerHTML = 'Play'
+  cursor.style.backgroundColor= "#fff"
+  
+})
+play.addEventListener("mouseleave",function(){
+  cursor.style.height = '10px';
+  cursor.style.width = '10px';
+  t.innerHTML = ''
+  cursor.style.backgroundColor= "#BF1826"
+  
+})
+var play1 = document.querySelector("#page2 #overlay>h4")
+
+play1.addEventListener("mouseenter",function(){
+  cursor.style.height = '80px';
+  cursor.style.width = '80px';
+  t.innerHTML = 'Play'
+  cursor.style.backgroundColor= "#fff"
+  
+})
+play1.addEventListener("mouseleave",function(){
+  cursor.style.height = '10px';
+  cursor.style.width = '10px';
+  t.innerHTML = ''
+  cursor.style.backgroundColor= "#BF1826"
+  
+})
+var play2 = document.querySelectorAll(".page3-elem #overlay>h4")
+
+play2.forEach(function(e){
+  e.addEventListener("mouseenter",function(){
+    cursor.style.height = '80px';
+    cursor.style.width = '80px';
+    t.innerHTML = 'Play'
+    cursor.style.backgroundColor= "#fff"
+    
+  })
+  e.addEventListener("mouseleave",function(){
+    cursor.style.height = '10px';
+    cursor.style.width = '10px';
+    t.innerHTML = ''
+    cursor.style.backgroundColor= "#BF1826"
+    
+  })
+})
+var drag = document.querySelectorAll(".elem ")
+
+drag.forEach(function(e){
+  e.addEventListener("mouseenter",function(){
+    cursor.style.height = '100px';
+    cursor.style.width = '100px';
+    t.innerHTML = 'DRAG'
+    t.style.color = "#fff"
+    
+    
+  })
+  e.addEventListener("mouseleave",function(){
+    cursor.style.height = '10px';
+    cursor.style.width = '10px';
+    t.innerHTML = ''
+    t.style.color = "#000"
+    
+    
+  })
 })
