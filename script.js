@@ -116,3 +116,35 @@ duration:1,
 
 }
 )
+t1.to("#page6>h1",{
+  opacity:1,
+  stagger:0.2,
+  duration:0.6,
+  scrollTrigger:{
+    scroller:"#main",
+    trigger:"#page6>h1",
+    scrub:2,
+    start:"top 90%",
+    end:"top 70%",
+    // markers:true
+  }
+})
+t1.to("#black>h1",{
+  opacity:1,
+  stagger:0.2,
+  duration:0.6,
+  scrollTrigger:{
+    scroller:"#main",
+    trigger:"#black>h1",
+    scrub:2,
+    start:"top 90%",
+    end:"top 70%",
+    // markers:true
+  }
+})
+var cursor = document.querySelector("#customcursor")
+var main = document.querySelector("#main")
+main.addEventListener("mousemove",function(dets){
+  cursor.style.left = `${dets.x + 30}px`
+  cursor.style.top = `${dets.y}px`
+})

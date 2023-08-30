@@ -12,6 +12,7 @@ html,body{
     position: relative;
     overflow: hidden;
     background-color: black;
+    cursor: none;
 }
 #page1{
     min-height: 100vh;
@@ -560,6 +561,7 @@ html,body{
     position: absolute;
     top: 15%;
     left: 10%;
+    opacity: 0;
 }
 #black h1 span{
     color: #BF1826;
@@ -648,11 +650,188 @@ html,body{
     padding: 12px ;
 }
 #page6{
-    height: 100vh;
+    height: 130vh;
     width: 100%;
     position: relative;
 }
+#page6 h1{
+    font-size: 108px;
+    font-weight: 300;
+    font-family: Saol Display;
+    text-transform: uppercase;
+    line-height: 108px;
+    text-align: center;
+    position: relative;
+}
+#page6 h1{
+    font-size: 108px;
+    font-weight: 300;
+    font-family: Saol Display;
+    text-transform: uppercase;
+    line-height: 108px;
+    text-align: center;
+    opacity: 0;
+}
+#page6 h1::before  {
+    content: "";
+    height: 1px ;
+    width: 80px;
+    position: absolute;
+    background-color: #000;
+    left: 10%;
+   
+    top: 50%;
+}
+#page6 h1::after{
+    right: 10%;
+    content: "";
+    height: 1px ;
+    width: 80px;
+    position: absolute;
+    background-color: #000;
+    top: 50%;
+}
+#page6 h1 span{
+    color: #BF1826;
+    font-style: italic;
+}
+#page6 h4{
+    font-family: inter;
+    font-weight: 100;
+    color: #BF1826;
+    font-size: 36px;
+    letter-spacing: 0.4px;
+  text-align: center;
+    padding-top: 5%;
+    position: relative;
+    cursor: pointer;
+}
+#page6 h4::after{
+    content: "";
+    background-color: #BF1826;
+    height: 2px;
+    width: 0%;
+   position: absolute;
+   left: 34.5%;
+   bottom: 0;
+    transition: all ease 1s;
+    
+}
+#page6 h4:hover::after{
+  
+  width: 31%;
+}
+#tags{
+   position: absolute;
+   left: 49%;
+    transform: translateX(-50%);
+    margin-top: 1.5%;
+}
+#tags a{
+    color: #5a5c5a;
+    font-family: inter;
+    
+}
+#tags span{
+    padding: 10px 5px;
+}
+#page6 h2{
+    font-family: inter ;
+    font-size: 37px;
+    text-align: center;
+    padding-top: 7%;
+    font-weight: 100;
+}
+#page6 h5{
+    font-family: inter;
+    color: #BF1826;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    padding-top: 3%;
+}
+#page6 p{
+    font-family: inter;
+    color: #5a5c5a;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+    padding-top: 10px;
+}
+#page6 h6{
+    font-family: inter;
+    color: #BF1826;
+    text-transform: uppercase;
+    text-align: center;
+    font-weight: 300;
+    font-size: 16px;
+    letter-spacing: 3px;
+    padding-top: 3%;
+    position: relative;
+}
+#page6 h6::after{
+    content: "";
+    position: absolute;
+    right: 10%;
+    height: 1px;
+    width: 32%;
+    background-color: #8d908d;
+    bottom: 10%;
+}
+#page6 h6::before{
+    content: "";
+    position: absolute;
+    left: 10%;
+    height: 1px;
+    width: 32%;
+    background-color: #8d908d;
+    bottom: 10%;
+}
+#images{
+    height: 20vh;
+    width: 80%;
+    margin-left: 10% ;
+    /* background-color: #BF1826; */
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 35px;
+}
+.e{
+    height: 50% ;
+    width: 12%;
+    /* background-color: #D66A73; */
 
 
-
-
+}
+.e img{
+    height: 100%;
+    width: 100%;
+    mix-blend-mode: difference;
+}
+#tags1{
+    position: absolute;
+    left: 49%;
+     transform: translateX(-50%);
+     margin-top: 2%;
+ }
+ #tags1 a{
+     color: #5a5c5a;
+     font-family: inter;
+     
+ }
+ #tags1 span{
+     padding: 10px 5px;
+ }
+ #customcursor{
+    position: absolute;
+    height: 10px;
+    width: 10px;
+    background-color: #BF1826;
+    border-radius: 50%;
+    z-index: 999;
+    cursor: none;
+ }
