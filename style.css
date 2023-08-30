@@ -1,3 +1,4 @@
+
 *{
     padding: 0;
     margin: 0;
@@ -388,6 +389,270 @@ html,body{
 
 }
 #page4{
-    min-height:100vh;
+    min-height:250vh;
     width: 100%;
+    position: relative;
 }
+#page4 h1{
+    font-family: Saol Display;
+    text-transform: Uppercase;
+    font-size: 215px;
+    font-weight: 300;
+    line-height: 173px;
+    letter-spacing: 0.4px;
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    margin-top: 15vh;
+    position: relative;
+    z-index: 99;
+}
+#page4 h1 span{
+    font-style: italic;
+    font-family: Saol Display;
+    color: #BF1826;
+    text-transform: capitalize;
+}
+#page4-container{
+      height: 130vh;
+      width: 100%;
+      /* background-color: #BF1826; */
+      position: absolute;
+      top: 35%;
+      display: flex;
+      justify-content: space-evenly;
+}
+.containers{
+    height: 80%;
+    width: 20%;
+    /* background-color: antiquewhite; */
+    position: relative;
+}
+.img{
+    height: 70%;
+    width: 100%;
+    /* background-color: aquamarine; */
+    position: relative;
+    overflow: hidden;
+}
+.c{
+    margin-top: 1vw;
+}
+
+.img img{
+    height: 110%;
+    width: 100%;
+    object-fit: cover;
+    
+}
+.containers h2{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 20px;
+    padding-top: 20px;
+    color: rgb(0, 0, 0);
+}
+.containers p{
+    font-family: inter;
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(0, 0, 0, 0.61);
+    padding-top: 10px;
+    width: 70%;
+}
+#page4-container2{
+    height: 38vh;
+    width: 100%;
+    /* background-color: #BF1826; */
+    position: absolute;
+    bottom: 0;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+#upper{
+    height: 17vh;
+    width: 100%;
+    /* background-color: aqua; */
+    
+    overflow-y: hidden;
+   white-space: nowrap;
+  
+   
+
+}
+#upper::-webkit-scrollbar{
+    display: none;
+}
+#lower{
+    height: 17vh;
+    width: 100%;
+    /* background-color: rgb(11, 38, 38); */
+    overflow-y: hidden;
+    white-space: nowrap;
+    
+   
+
+}
+#lower::-webkit-scrollbar{
+ display: none;
+}
+#upper h2{
+    font-family: Saol Display;
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-right: 40px;
+    display: inline-block;
+    animation-name: move;
+    animation-duration: 30000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#lower h2{
+    font-family: Saol Display;
+    font-size: 6.5vw;
+    text-transform: uppercase;
+    font-weight: 100;
+    margin-right: 40px;
+    display: inline-block;
+    animation-name: moveee;
+    animation-duration: 30000ms;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+@keyframes move {
+    0%{
+        transform: translateX(calc(-100% - 40px ));
+    }
+    100%{
+        transform: translateX(0);
+    }
+}
+@keyframes moveee {
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(calc(-100% - 40px));
+    }
+}
+#page5{
+    min-height: 150vh;
+    width: 100%;
+    background-color: #fff;
+    position: relative;
+}
+#black{
+    height: 110vh;
+    width: 100%;
+    background-color: black;
+    margin-top: 3%;
+}
+#black h1{
+    color: #fff;
+    font-family: Saol Display;
+    font-weight: 300;
+    font-size: 3.5vw;
+    width: 20%;
+    line-height: 3.5vw;
+    position: absolute;
+    top: 15%;
+    left: 10%;
+}
+#black h1 span{
+    color: #BF1826;
+    font-family: Saol Display;
+    font-style: italic;
+}
+#page5-container{
+    height: 75vh;
+    width: 100%;
+    /* background-color: #BF1826; */
+    position: absolute;
+    bottom: 8%;
+    left: 12%;
+    white-space: nowrap;
+    display: flex;
+    align-items: center;
+    gap: 35px;
+}
+
+.elem{
+    height: 100%;
+    width: 24%;
+    background-color: black;
+    
+  flex-grow: 0.75;
+   position: relative;
+   /* overflow: hidden; */
+}
+.elem img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    opacity: 0.5;
+}
+.elem .text{
+    height: 30vh;
+   width: 100%;
+    /* background-color: #BF1826; */
+   position: absolute;
+   bottom: 0;
+   display: flex;
+   flex-direction: column;
+   padding: 0 30px;
+}
+#special{
+    height: 37vh;
+}
+#inner{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.text h4{
+    font-family: inter;
+    text-transform: uppercase;
+    font-size: 10px;
+    font-weight: 400;
+    letter-spacing: 3px;
+    color: #fff;
+    
+}
+.text h4 span{
+    color: #BF1826;
+}
+.text h2{
+    font-family: Saol Display;
+    font-weight: 300;
+    font-size: 33px;
+    line-height: 35px;
+    letter-spacing: 0.3px;
+    color: #fff;
+    margin-top: 5px;
+}
+.text p{
+    font-family: inter;
+    font-size: 16px;
+    color: #fff;
+    font-weight: 400;
+    padding-top: 10px;
+}
+#inner i{
+    color: #fff;
+    font-size: 16px;
+    border: 2px solid #fff;
+    border-radius: 50%;
+    padding: 12px ;
+}
+#page6{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+}
+
+
+
+

@@ -99,6 +99,20 @@ gsap.to("#page3-container h2,#page3-container h3",{
   // markers:true
 
 }
- 
-})
 
+
+})
+t1.to("#page5-container",{
+x:-60,
+scrollTrigger:{
+  scroller:"#main",
+  trigger:"#page5-container",
+  start:"0 70%",
+  end: "100% top",
+  scrub:2,
+  // markers:true
+},
+duration:1,
+
+}
+)
